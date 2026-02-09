@@ -3,7 +3,7 @@ import imagekit from "../config/imagekit.js";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 import crypto from "crypto";
-import sendMail from "../utils/sendEMail.js";
+import sendMail from "../utils/sendEmail.js";
 dotenv.config();
 const createToken = (userId) => {
   return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
