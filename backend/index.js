@@ -12,13 +12,9 @@ app.use(express.json());
 
 connectDB();
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://music-player-fullstack.vercel.app"
-  ],
-  credentials: true
-}));
-
+    origin:"http://localhost:5173",
+    credentials:true,
+}))
 app.use("/api/songs",songRouter);
 
 app.use("/api/auth", router);
