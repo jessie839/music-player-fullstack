@@ -170,7 +170,7 @@ const EditProfile = ({ onClose }) => {
         onChange={(e) => setName(e.target.value)}
       />
 
-      <Input
+      <InputSE
         label="Email"
         type="text"
         placeholder="Update your email"
